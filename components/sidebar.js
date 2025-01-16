@@ -3,7 +3,18 @@
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Home, Users, BookOpen, MessageSquare, Settings, Menu, X } from "lucide-react";
+import { 
+  Home, 
+  Users, 
+  BookOpen, 
+  MessageSquare, 
+  Settings, 
+  Menu, 
+  X, 
+  BarChart, 
+  Layout, 
+  Building2 
+} from "lucide-react"; // Certifique-se que todos os ícones estão sendo importados corretamente
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -28,6 +39,21 @@ const sidebarNavItems = [
     title: "Chat",
     href: "/chat",
     icon: MessageSquare,
+  },
+  {
+    title: "REITs",
+    href: "/reits",
+    icon: Building2, // Ícone para REITs
+  },
+  {
+    title: "Dashboard",
+    href: "/dashboard",
+    icon: Layout, // Ícone para Dashboard
+  },
+  {
+    title: "Stocks",
+    href: "/stocks",
+    icon: BarChart, // Ícone para Stocks
   },
   {
     title: "Settings",
